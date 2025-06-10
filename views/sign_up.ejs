@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>X sign-up</title>
+</head>
+<body>
+<div class="overall">
+         <div class="logo-1"><img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt=""></div>
+         <div class="section">
+            <div class="page">
+                <span class="heading-1">Happening now</span>
+                <span class="heading-2">join today</span>
+            </div>
+            <div class="login">
+                <form  action="/ragistor" method="POST"  style="display: flex; flex-direction: column;">
+                    
+                    <span class="alert" >*</span>
+                    <input type="text" name="username" placeholder="username or email" class="f-input" id="user">
+                     <% if(error){%>
+                        <span style="color: red; font-size: 0.7rem;"><%=error%></span>
+                    <%}%>
+                     <input type="password" name="c_password" placeholder="create password"  class="f-input" id="password">
+                     <span id="message" style="color: red; font-size: 0.7rem;"></span>
+                     <input type="text" name="cm_password" placeholder="comfirm password" class="f-input" id="cm_password">
+                     <span class="message" style="font-size: 0.7rem; text-align: end; margin-right: 1rem; display:block; "> </span>
+                     <div class="pin" style="display: flex; align-items: center;">
+                        <input type="number"  name="pin" placeholder="security pin" class="f-input" id="pin" style="width: 5rem ; min-width: 5rem;" >
+                     <span style="font-size: 0.5rem; text-align: end; margin-right: 1rem; display:block; ">When you  forget <br> your password</span>
+                     </div>
+                    <button class="sign" id="login">SignUp now</button>
+                </form>
+                <div class="sign-up" style="font-size: 0.7rem; ">do you Heve accaunt <a href="http://localhost:8080/"  style="color: rgb(47, 147, 247);">login</a></div>
+                <span style="font-size: 0.6rem; margin-top: 0.5rem;">By signing up, you agree to the <a href="">trems & condition</a>and <br><a href="">privacy policy</a> including <a href="">cookie use</a> </span>
+            </div>
+
+         </div>
+    </div>
+    <script src="sign_up/script.js"></script>
+</body>

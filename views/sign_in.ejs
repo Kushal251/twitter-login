@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>X sign-up</title>
+</head>
+<body>
+    <div class="overall">
+         <div class="logo-1"><img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt=""></div>
+         <div class="section">
+            <div class="page">
+                <span class="heading-1">Happening now</span>
+                <span class="heading-2">join today</span>
+            </div>
+            <div class="login">
+                
+               
+                <form action="/" method="POST"  style="display: flex; flex-direction: column;">
+                    <input type="text" name="username" placeholder="username" class="f-input" id="user">
+                    <input type="password" name="password" placeholder="password" class="f-input" id="password">
+                    <% if(error){%>
+                        <span style="color: red; font-size: 0.7rem;"><%=error%></span>
+                    <%}%>
+                    <a href="http://localhost:8080/user/" style="font-size: 0.7rem; text-align: end; color: rgb(47, 147, 247);">Forget password</a>
+                    <button id="login">Login</button>
+                </form>
+                <div class="sign-up" style="font-size: 0.7rem; ">doesn't Heve accaunt <a href="http://localhost:8080/ragistor"  style="color: rgb(47, 147, 247);">Register</a></div>
+                <span style="font-size: 0.6rem; margin-top: 0.5rem;">By signing up, you agree to the <a href="">trems & condition</a>and <br><a href="">privacy policy</a> including <a href="">cookie use</a> </span>
+            </div>
+         </div>
+    </div>
+   
+    <script src="sign_in/script.js"></script>
+</body>
+</html>
